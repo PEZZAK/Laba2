@@ -60,6 +60,7 @@
 
 <img width="575" height="110" alt="1 5 2" src="https://github.com/user-attachments/assets/06403f81-dd48-4ef2-aec6-2c43a2927f1a" />
 <img width="604" height="358" alt="1 5" src="https://github.com/user-attachments/assets/ab07b336-6e3a-4b44-825a-6cdc171a959c" />
+<img width="610" height="216" alt="1 5 3" src="https://github.com/user-attachments/assets/e398204b-79d1-40f6-babf-7ccc75932771" />
 
 
 # Задание 2
