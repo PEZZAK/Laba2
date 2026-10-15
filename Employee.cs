@@ -1,9 +1,6 @@
 ﻿
 namespace Lab2
 {
-    /// <summary>
-    /// Сущность Сотрудник: имя и отдел.
-    /// </summary>
     public class Employee
     {
         private string name;
