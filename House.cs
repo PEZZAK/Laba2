@@ -1,9 +1,6 @@
 ﻿
 namespace Lab2
 {
-    /// <summary>
-    /// Сущность Дом: количество этажей.
-    /// </summary>
     public class House
     {
         private int floors;
