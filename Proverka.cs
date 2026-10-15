@@ -2,9 +2,6 @@
 
 namespace Lab2
 {
-    /// <summary>
-    /// Класс проверок ввода с клавиатуры.
-    /// </summary>
     public class Proverka
     {
         // Чтение целого числа
