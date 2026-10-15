@@ -3,10 +3,6 @@ using System.Collections.Generic;
 
 namespace Lab2
 {
-    /// <summary>
-    /// Сущность Отдел: название, начальник, список сотрудников.
-    /// Задача 3.4: имея ссылку на сотрудника, можно узнать список всех сотрудников отдела.
-    /// </summary>
     public class Department
     {
         private string title;
