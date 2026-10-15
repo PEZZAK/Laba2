@@ -1,10 +1,6 @@
 ﻿
 namespace Lab2
 {
-    /// <summary>
-    /// Сущность Имя: фамилия, личное имя, отчество.
-    /// Любой параметр может быть не задан — тогда он не участвует в выводе.
-    /// </summary>
     public class Name
     {
         private string surname;
