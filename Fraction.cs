@@ -24,20 +24,17 @@ namespace Lab2
                 throw new ArgumentException("Знаменатель не может быть нулём.");
             }
 
-            // Знак держим в числителе
             if (denominator < 0)
             {
                 numerator = -numerator;
                 denominator = -denominator;
             }
 
-            // Сокращаем дробь
             int gcd = Gcd(Math.Abs(numerator), denominator);
             this.numerator = numerator / gcd;
             this.denominator = denominator / gcd;
         }
 
-        // НОД двух чисел (алгоритм Евклида)
         private int Gcd(int a, int b)
         {
             while (b != 0)
@@ -48,8 +45,6 @@ namespace Lab2
             }
             return a;
         }
-
-        // ---------- Сложение ----------
 
         public Fraction Sum(Fraction other)
         {
@@ -65,7 +60,6 @@ namespace Lab2
                                 this.denominator);
         }
 
-        // ---------- Вычитание ----------
 
         public Fraction Minus(Fraction other)
         {
@@ -81,7 +75,6 @@ namespace Lab2
                                 this.denominator);
         }
 
-        // ---------- Умножение ----------
 
         public Fraction Multiply(Fraction other)
         {
@@ -94,7 +87,6 @@ namespace Lab2
             return new Fraction(this.numerator * value, this.denominator);
         }
 
-        // ---------- Деление ----------
 
         public Fraction Divide(Fraction other)
         {
