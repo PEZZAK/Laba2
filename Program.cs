@@ -89,7 +89,6 @@ namespace Lab2
         {
             Console.WriteLine("Создайте отдел:");
 
-            // Название отдела — обычная непустая строка (можно цифры и пробелы)
             string deptName = check.ReadString("Название отдела: ");
 
             Department dept = new Department(deptName);
@@ -97,7 +96,6 @@ namespace Lab2
             int count = check.ReadPositiveInt("Сколько сотрудников? ");
             for (int i = 1; i <= count; i++)
             {
-                // Имя сотрудника — только буквы и дефис
                 string name = check.ReadName("Имя сотрудника " + i + ": ");
                 Employee e = new Employee(name);
                 dept.AddEmployee(e);
