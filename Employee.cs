@@ -37,13 +37,11 @@ namespace Lab2
                 return name;
             }
 
-            // Если этот сотрудник — начальник отдела
             if (department.Head == this)
             {
                 return name + " начальник отдела " + department.Title;
             }
 
-            // Иначе — обычный сотрудник
             string headName = department.Head != null ? department.Head.Name : "не назначен";
             return name + " работает в отделе " + department.Title
                 + ", начальник которого " + headName;
