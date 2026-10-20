@@ -4,7 +4,6 @@ namespace Lab2
 {
     public class Proverka
     {
-        // Чтение целого числа
         public int ReadInt(string message)
         {
             Console.Write(message);
@@ -16,7 +15,6 @@ namespace Lab2
             return value;
         }
 
-        // Чтение неотрицательного целого
         public int ReadNonNegativeInt(string message)
         {
             int value;
@@ -41,7 +39,6 @@ namespace Lab2
             }
         }
 
-        // Чтение положительного целого
         public int ReadPositiveInt(string message)
         {
             int value;
@@ -66,7 +63,6 @@ namespace Lab2
             }
         }
 
-        // Чтение непустой строки (для случаев, где допустимы любые символы)
         public string ReadString(string message)
         {
             while (true)
@@ -84,7 +80,6 @@ namespace Lab2
             }
         }
 
-        // Чтение строки, которая может быть пустой
         public string ReadOptionalString(string message)
         {
             Console.Write(message);
@@ -98,7 +93,6 @@ namespace Lab2
             return input;
         }
 
-        // Чтение имени: только буквы и дефис
         public string ReadName(string message)
         {
             while (true)
@@ -124,7 +118,6 @@ namespace Lab2
             }
         }
 
-        // Чтение необязательного имени: только буквы и дефис, либо пусто
         public string ReadOptionalName(string message)
         {
             while (true)
@@ -149,7 +142,6 @@ namespace Lab2
             }
         }
 
-        // Чтение ненулевого знаменателя
         public int ReadNonZeroInt(string message)
         {
             int value;
@@ -174,7 +166,6 @@ namespace Lab2
             }
         }
 
-        // Проверка: строка состоит только из букв и дефисов
         private bool IsLettersOnly(string input)
         {
             bool hasLetter = false;
@@ -191,7 +182,6 @@ namespace Lab2
 
                 if (c == '-')
                 {
-                    // Дефис не может быть первым или последним символом
                     if (i == 0 || i == input.Length - 1)
                     {
                         return false;
@@ -199,7 +189,6 @@ namespace Lab2
                     continue;
                 }
 
-                // Любой другой символ (цифра, пробел, знак препинания) — ошибка
                 return false;
             }
 
