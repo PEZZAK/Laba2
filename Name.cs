@@ -25,7 +25,6 @@ namespace Lab2
             set { patronymic = value; }
         }
 
-        // Конструктор 1: только личное имя (для 4.5)
         public Name(string firstName)
         {
             this.firstName = firstName;
@@ -33,7 +32,6 @@ namespace Lab2
             this.patronymic = null;
         }
 
-        // Конструктор 2: имя + фамилия (для 4.5)
         public Name(string firstName, string surname)
         {
             this.firstName = firstName;
@@ -41,7 +39,6 @@ namespace Lab2
             this.patronymic = null;
         }
 
-        // Конструктор 3: все три параметра (для 1.3 и 4.5)
         public Name(string firstName, string surname, string patronymic)
         {
             this.firstName = firstName;
@@ -53,7 +50,6 @@ namespace Lab2
         {
             string result = "";
 
-            // Порядок: Фамилия Имя Отчество, но только заданные части
             if (surname != null && surname != "")
             {
                 result = surname;
