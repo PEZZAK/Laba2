@@ -40,7 +40,6 @@ namespace Lab2
             this.employees = new List<Employee>();
         }
 
-        // Добавить сотрудника в отдел
         public void AddEmployee(Employee employee)
         {
             if (employee != null && !employees.Contains(employee))
@@ -50,13 +49,11 @@ namespace Lab2
             }
         }
 
-        // Получить список всех сотрудников отдела
         public List<Employee> GetAllEmployees()
         {
             return new List<Employee>(employees);
         }
 
-        // Получить список коллег сотрудника (без него самого)
         public List<Employee> GetColleagues(Employee employee)
         {
             List<Employee> result = new List<Employee>();
